@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+          background-image: url("images/logic-background.jpg");
+          background-attachment: fixed;
+        }
+
+        body {
+            padding-top: 10%;
+            margin-left: 20%;
+            font-family: Arial;
+        }
+
+        header {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            margin-right: 20%;
+        }
+        #logo {
+          float: left;
+          width: 10%;
+          margin-bottom: 10%;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            border-radius: 15px;
+            border: 3px ridge silver;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+        </style>
+    </head>
+<body>
+
+<!-- Header -->
+<header>
+  <img id="logo" src="images/logiclogo.jpg">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</header>
+<main>
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="images/logic1.jpg" style="width:100%">
+      <img src="images/logic2.jpg" style="width:100%">
+      <img src="images/logic3.jpeg" style="width:100%">
+      <img src="images/logic4.jpg" style="width:100%">
+      <img src="images/logic5.jpg" style="width:100%">
+      <img src="images/logic6.jpg" style="width:100%">
+      <img src="images/logic11.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/logic7.jpg" style="width:100%">
+      <img src="images/logic8.jpg" style="width:100%">
+      <img src="images/logic9.jpg" style="width:100%">
+      <img src="images/logic10.jpg" style="width:100%">
+      <img src="images/logic17.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="images/logic12chess.jpg" style="width:100%">
+      <img src="images/logic13.jpg" style="width:100%">
+      <img src="images/logic14.jpg" style="width:100%">
+      <img src="images/logic15.jpg" style="width:100%">
+      <img src="images/logic16.jpg" style="width:100%">
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2021 Sarge Productions</p>
+</footer>
+</body>
+</html>
